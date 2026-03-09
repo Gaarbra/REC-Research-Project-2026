@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Environment variables (API keys)
+.env
+
+# Windows system files
+Thumbs.db
+
+# Raw data files
+data/raw/
