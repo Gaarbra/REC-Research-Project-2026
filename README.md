@@ -11,7 +11,7 @@ May 4, 2026
 
 This project investigates whether localized zero-emission vehicle (ZEV) adoption rates correlate with sustained reductions in nitrogen dioxide (NO₂) and fine particulate matter (PM₂.₅) across 20 Southern California cities in the post-COVID period (2021–2024). Using a balanced panel of 80 city-year observations, four OLS models are estimated with year fixed effects and city-clustered standard errors.
 
-The central finding: at current penetration rates of 1–7% of registered vehicles, ZEV adoption is **not associated with air quality improvement**. The dominant predictor of both pollutants is pre-existing environmental burden as measured by CalEnviroScreen 4.0, consistent with structural inequality literature pointing to heavy-duty diesel freight — not light-duty passenger vehicles — as the mechanism sustaining pollution disparities in high-burden communities.
+The central finding: at current penetration rates of 1–7% of registered vehicles, ZEV adoption is **not associated with air quality improvement**. The dominant predictor of both pollutants is pre-existing environmental burden as measured by CalEnviroScreen 4.0, consistent with structural inequality literature pointing to heavy-duty diesel freight - not light-duty passenger vehicles - as the mechanism sustaining pollution disparities in high-burden communities.
 
 ---
 
@@ -33,13 +33,15 @@ REC-Research-Project-2026/
 │   ├── Census ACS 2020 5-Year income estimates
 │   └── CalEnviroScreen 4.0 tract-level scores
 ├── docs/
-│   └── Girma_final_draft.pdf   # Final research paper
+│   └── Girma_final_draft.pdf   # Final research paper (link below)
 ├── bib/                   # Bibliography / references
 ├── .gitattributes
 └── .gitignore
 ```
 
 The analysis pipeline (Jupyter Notebook) is the primary deliverable alongside the paper.
+
+**[Read the final paper (PDF)](https://github.com/Gaarbra/REC-Research-Project-2026/blob/main/docs/Girma_final_draft.pdf)**
 
 ---
 
@@ -86,10 +88,10 @@ All models include city-clustered standard errors and year fixed effects with 20
 The residualized CES score is **positive and highly significant** across all models and both pollutants. For PM₂.₅, the coefficient is approximately **0.20–0.22 µg/m³ per unit**; for NO₂, **0.39–0.43 ppb per unit**. Pre-existing environmental burden predicts current air quality even after controlling for income, fleet size, ZEV adoption, and year trends.
 
 ### ZEV Adoption
-The residualized ZEV rate is **positive and statistically significant** — cities with unexpectedly high ZEV adoption (given income and fleet size) are associated with *worse*, not better, air quality. The lagged coefficient is larger than the contemporaneous one, ruling out a delayed-benefit explanation. The likely mechanism: high-adoption cities are also the most traffic-intensive, and post-COVID traffic rebound is outpacing electrification gains.
+The residualized ZEV rate is **positive and statistically significant** - cities with unexpectedly high ZEV adoption (given income and fleet size) are associated with *worse*, not better, air quality. The lagged coefficient is larger than the contemporaneous one, ruling out a delayed-benefit explanation. The likely mechanism: high-adoption cities are also the most traffic-intensive, and post-COVID traffic rebound is outpacing electrification gains.
 
 ### Equity Interaction
-The ZEV × CES interaction is **not significant** for either pollutant. High-burden communities are neither benefiting more nor less from ZEV adoption — structural inequity persists independently of local electrification levels.
+The ZEV × CES interaction is **not significant** for either pollutant. High-burden communities are neither benefiting more nor less from ZEV adoption - structural inequity persists independently of local electrification levels.
 
 ### Residual Analysis
 Model 3 residuals plotted against CES scores show a consistent upward slope. Ontario's NO₂ residual exceeds +10 ppb above prediction (consistent with its position at the I-10/I-15 freight interchange); Mira Loma and Fontana are the largest PM₂.₅ over-performers. This points to **heavy-duty diesel freight** as the primary mechanism sustaining the pollution premium in high-burden communities.
